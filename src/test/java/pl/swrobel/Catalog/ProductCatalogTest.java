@@ -2,6 +2,7 @@ package pl.swrobel.Catalog;
 
 
 import org.junit.jupiter.api.Test;
+import pl.swrobel.productcatalog.ArrayListProductStorage;
 import pl.swrobel.productcatalog.Product;
 import pl.swrobel.productcatalog.ProductCatalog;
 
@@ -90,7 +91,9 @@ public class ProductCatalogTest {
     }
 
     private ProductCatalog thereIsProductCatalog() {
-        return new ProductCatalog();
+        return new ProductCatalog(
+                new ArrayListProductStorage()
+        );
     }
 
 
