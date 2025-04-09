@@ -1,10 +1,7 @@
-package pl.swrobel.Catalog;
+package pl.swrobel.productcatalog;
 
 
 import org.junit.jupiter.api.Test;
-import pl.swrobel.productcatalog.ArrayListProductStorage;
-import pl.swrobel.productcatalog.Product;
-import pl.swrobel.productcatalog.ProductCatalog;
 
 import javax.imageio.metadata.IIOInvalidTreeException;
 import java.math.BigDecimal;
@@ -18,7 +15,7 @@ public class ProductCatalogTest {
     void itAllowsTolistAllProducts() {
         ProductCatalog catalog = thereIsProductCatalog();
 
-        List<Product> products = catalog.AllProducts();
+        List<Product> products = catalog.allProducts();
 
         assertTrue(products.isEmpty());
 
@@ -29,7 +26,7 @@ public class ProductCatalogTest {
         ProductCatalog catalog = thereIsProductCatalog();
         String productId = catalog.createProduct("lego set 8083","nice one");
 
-        List<Product> products = catalog.AllProducts();
+        List<Product> products = catalog.allProducts();
         assertFalse(products.isEmpty());
     }
 

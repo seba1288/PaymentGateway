@@ -13,7 +13,7 @@ public class ProductCatalog {
        this.productStorage = productStorage; //TEch
     }
 
-    public List<Product> AllProducts() {
+    public List<Product> allProducts() {
         return  productStorage.allProduct(); //TECH
     }
 
