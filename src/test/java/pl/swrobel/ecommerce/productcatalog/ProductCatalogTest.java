@@ -1,7 +1,10 @@
-package pl.swrobel.productcatalog;
+package pl.swrobel.ecommerce.productcatalog;
 
 
 import org.junit.jupiter.api.Test;
+import pl.swrobel.ecommerce.productcatalog.ArrayListProductStorage;
+import pl.swrobel.ecommerce.productcatalog.Product;
+import pl.swrobel.ecommerce.productcatalog.ProductCatalog;
 
 import javax.imageio.metadata.IIOInvalidTreeException;
 import java.math.BigDecimal;

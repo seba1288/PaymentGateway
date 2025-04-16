@@ -1,10 +1,8 @@
-package pl.swrobel.ecommerce;
+package pl.swrobel.ecommerce.productcatalog;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.swrobel.productcatalog.Product;
-import pl.swrobel.productcatalog.ProductCatalog;
 
 import java.util.List;
 

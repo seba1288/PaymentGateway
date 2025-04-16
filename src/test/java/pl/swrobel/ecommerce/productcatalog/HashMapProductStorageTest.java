@@ -1,4 +1,4 @@
-//package pl.swrobel.productcatalog;
+//package pl.swrobel.ecommerce.productcatalog;
 //
 //import org.junit.jupiter.api.Test;
 //
@@ -8,7 +8,7 @@
 //import static org.junit.jupiter.api.Assertions.assertEquals;
 //
 //public class HashMapProductStorageTest {
-//
+////
 //    @Test
 //    void itSavesAndLoadProduct() {
 //        Product product = thereIsProduct();
