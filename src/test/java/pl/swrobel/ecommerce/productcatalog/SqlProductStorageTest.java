@@ -30,9 +30,9 @@ public class SqlProductStorageTest {
         Product product = thereIsProduct();
         ProductStorage storage = thereIsStorage();
 
-        storage.save(product);
+        storage.add(product);
 
-        var loaded  = storage.loadProductById(product.getId());
+        var loaded  = storage.getProductById(product.getId());
 
         assertEquals(product.getId(), loaded.getId());
         assertEquals(product.getDescription(), loaded.getDescription());
@@ -52,12 +52,12 @@ public class SqlProductStorageTest {
 
     @Test
     void itLoadsAllProducts() {
-        Product product = thereIsProduct();
-        ProductStorage storage = thereIsStorage();
+        var product = thereIsProduct();
+        var productStorage = thereIsStorage();
 
-        storage.save(product);
+        productStorage.add(product);
 
-        List<Product> all = storage.allProducts();
+        List<Product> all = productStorage.allProducts();
 
         assertEquals(1,all.size());
     }

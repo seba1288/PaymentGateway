@@ -5,9 +5,7 @@ import java.util.List;
 public interface ProductStorage {
     List<Product> allProduct();
 
-    List<Product> allProducts();
+    void add(Product newProduct);
 
-    void save(Product newProduct);
-
-    Product loadProductById(String productId);
+    Product getProductById(String productId);
 }

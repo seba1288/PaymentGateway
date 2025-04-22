@@ -18,17 +18,12 @@ public class ArrayListProductStorage implements ProductStorage {
     }
 
     @Override
-    public List<Product> allProducts() {
-        return Collections.unmodifiableList(products); //TECH
-    }
-
-    @Override
-    public void save(Product newProduct) {
+    public void add(Product newProduct) {
         this.products.add(newProduct);
     }
 
     @Override
-    public Product loadProductById(String productId) {
+    public Product getProductById(String productId) {
         return products.stream()
                 .filter(product -> product.getId().equals(productId))
                 .findFirst()

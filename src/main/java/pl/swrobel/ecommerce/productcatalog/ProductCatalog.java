@@ -25,17 +25,17 @@ public class ProductCatalog {
                 name,
                 description
         ); // DOMAIN
-        this.productStorage.save(newProduct); // TECH
+        this.productStorage.add(newProduct); // TECH
         return newProduct.getId();
     }
 
     public Product loadProductById(String productId) {
-        return productStorage.loadProductById(productId);
+        return productStorage.getProductById(productId);
 
     }
 
     public void changePrice(String productId, BigDecimal bigDecimal) {
-        var product = productStorage.loadProductById(productId);
+        var product = productStorage.getProductById(productId);
 
         if(BigDecimal.ZERO.compareTo(bigDecimal) <= 0) { // DOMAIN
             throw new InvalidPriceException();
