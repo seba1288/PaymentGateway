@@ -28,4 +28,9 @@ public class HashMapProductStorage  implements ProductStorage {
     public Product getProductById(String productId) {
         return productsHashMap.get(productId);
     }
+
+    @Override
+    public void save(Product newProduct) {
+
+    }
 }

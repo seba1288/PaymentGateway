@@ -30,4 +30,9 @@ public class ArrayListProductStorage implements ProductStorage {
                 .get(); // TECH
 
     }
+
+    @Override
+    public void save(Product newProduct) {
+
+    }
 }
